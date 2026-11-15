@@ -6,13 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('tiket', function (Blueprint $table) {
-            $table->id('id_tiket'); 
+        Schema::create('tikets', function (Blueprint $table) {
+            $table->id('id_tiket');
             $table->string('tipe_tiket');
             $table->integer('harga');
             $table->integer('kuota');
@@ -21,11 +18,8 @@ return new class extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('tiket');
+        Schema::dropIfExists('tikets');
     }
 };

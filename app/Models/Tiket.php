@@ -9,7 +9,7 @@ class Tiket extends Model
 {
     use HasFactory;
 
-    protected $table = 'tiket';
+    protected $table = 'tikets';
     protected $primaryKey = 'id_tiket';
     protected $fillable = ['tipe_tiket', 'harga', 'kuota', 'benefit'];
 }
